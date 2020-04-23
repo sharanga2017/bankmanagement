@@ -1,0 +1,49 @@
+﻿@model MyAccountsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div>
+    <h4>PrimaryAccount</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NamePrimary)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NamePrimary)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PrimaryBalance)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PrimaryBalance)
+        </dd>        
+    </dl>
+</div>
+
+<div>
+    <h4>Savings Account</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NameSavings)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NameSavings)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SavingsBalance)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SavingsBalance)
+        </dd>
+    </dl>
+</div>
+@*<div>
+    <a asp-action="Edit" asp-route-id="">Edit</a> |
+    <a asp-action="Index" asp-controller="">Back to List</a>
+</div>*@
