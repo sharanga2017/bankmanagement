@@ -21,7 +21,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PrimaryBalance)
-        </dd>        
+        </dd>
+
+        <dd class="col-sm-10">
+            <a asp-action="index" asp-controller="Primary">Details</a>
+        </dd>
+       
     </dl>
 </div>
 
@@ -40,6 +45,10 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.SavingsBalance)
+        </dd>
+
+        <dd class="col-sm-10">
+            <a asp-action="Index" asp-controller="Savings">Details</a>
         </dd>
     </dl>
 </div>
