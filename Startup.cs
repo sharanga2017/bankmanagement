@@ -42,6 +42,9 @@ namespace BankManagement
 
                 options.SignIn.RequireConfirmedEmail = false;
 
+
+
+
                 options.Tokens.EmailConfirmationTokenProvider = "CustomEmailConfirmation";
 
                 options.Lockout.MaxFailedAccessAttempts = 5;
